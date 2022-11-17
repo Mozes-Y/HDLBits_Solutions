@@ -6,8 +6,8 @@ module top_module(
 );
 
     parameter A = 2'b00, B = 2'b01, C = 2'b10, D = 2'b11;
-    wire [1:0] next_state;
-    reg  [1:0] state;
+    reg [1:0] next_state;
+    reg [1:0] state;
     // State transition logic
     always @(*) begin
         case (state)
