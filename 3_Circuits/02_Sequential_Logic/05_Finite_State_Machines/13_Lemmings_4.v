@@ -24,7 +24,7 @@ module top_module(
             DIG_L : next_state = (ground == 1'b0 ? FALL_L : DIG_L);
             DIG_R : next_state = (ground == 1'b0 ? FALL_R : DIG_R);
             SPLAT : next_state = SPLAT;
-            default: state = LEFT;
+            default: next_state = LEFT;
         endcase
     end
     
