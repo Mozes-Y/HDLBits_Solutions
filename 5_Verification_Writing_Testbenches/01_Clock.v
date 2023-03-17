@@ -1,5 +1,6 @@
 module top_module ( );
 
+    parameter delay = 5;
     reg clk;
     
     dut test(.clk(clk));
@@ -9,7 +10,8 @@ module top_module ( );
     end
     
     always begin
-        #5 clk = ~clk;
+        #delay;
+        clk = ~clk;
     end
     
 endmodule
